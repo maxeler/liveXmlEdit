@@ -64,7 +64,6 @@ var loggable = function(obj /* , objName, debugMode */){
 				if (arguments.length){
 					arguments[0] = prefix + arguments[0];
 				}
-				console.log.apply(null, arguments);
 			}
 		}
 	})(prefix);
@@ -484,7 +483,6 @@ var xmlEditor = (function(){
 					_nodeRefs.push(childNode);
 				}
 				catch (e){ 
-					GLR.messenger.inform({msg:_message["invalidNodeName"], mode:"error"});
 					$field.val("").focus();
 					return false;
 				}
@@ -573,7 +571,6 @@ var xmlEditor = (function(){
 					$(node).attr(aName, aValue);
 				}
 				catch (e){
-					GLR.messenger.inform({msg:_message["invalidAttrName"],mode:"error"});
 					$name.val("").focus();
 					return false;
 				}
@@ -707,7 +704,6 @@ var xmlEditor = (function(){
 					$prev.find(">div.hitarea").addClass("last");
 				}
 				$link.parent().remove();
-				GLR.messenger.inform({msg:_message["removeNodeSucess"], mode:"success"});
 				return true;
 			}
 			return false;
@@ -728,9 +724,7 @@ var xmlEditor = (function(){
 				async    : false,
 				url      : xmlPath,
 				dataType : "xml",
-				error    : function(){ GLR.messenger.show({msg:_message["xmlLoadProblem"], mode:"error"}); },
 				success  : function(xml){
-					GLR.messenger.show({msg:_message["xmlLoadSuccess"], mode:"success"});
 					_self.xml = xml;
 					callback();
 				}
@@ -755,10 +749,8 @@ var xmlEditor = (function(){
 		 * Calls methods for generating HTML representation of XML, then makes it collapsible/expandable
 		 */
 		renderTree: function(){
-			GLR.messenger.show({msg:_message["renderingHtml"], mode:"loading"});
 			_self.renderAsHTML();
 			_self.$container.find("ul:first").addClass("treeview");
-			GLR.messenger.inform({msg:_message["readyToEdit"], mode:"success"});
 		}		
 		
 	};
