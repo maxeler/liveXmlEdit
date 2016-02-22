@@ -278,7 +278,8 @@ var xmlEditor = (function(){
 		 * Assigns handlers for editing nodes and attributes. 
 		 * Happens only once, during renderAsHTML()
 		 */
-		assignEditHandlers: function(){		
+		assignEditHandlers: function(){
+		        $(_self.containerSelector).undelegate();		
 			$(_self.containerSelector)
 				.delegate("span.nodeName", "click", function(){ 
 					_toggleNode.apply($(this).parent().get(0));
