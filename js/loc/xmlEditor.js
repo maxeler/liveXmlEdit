@@ -279,7 +279,7 @@ var xmlEditor = (function(){
 		 * Happens only once, during renderAsHTML()
 		 */
 		assignEditHandlers: function(){		
-			$("#xml")
+			$(_self.containerSelector)
 				.delegate("span.nodeName", "click", function(){ 
 					_toggleNode.apply($(this).parent().get(0));
 				})
@@ -739,6 +739,7 @@ var xmlEditor = (function(){
 		 * @param {Function}	callback
 		 */
 		loadXmlFromString: function(xmlString, containerSelector, callback){
+		        _self.containerSelector = containerSelector;
 			_self.$container = $(containerSelector);
 			_self.xml        = _self.getXmlDOMFromString(xmlString);
 			callback();

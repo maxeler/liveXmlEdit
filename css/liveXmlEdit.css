@@ -1,49 +1,51 @@
-div#xml input, 
-div#xml textarea {font:bold 12px consolas,courier new,monospace;}
+div.xml input, 
+div.xml textarea {font:bold 12px consolas,courier new,monospace;}
 
+button.cancel {background-color:#999; color:#fff; border:1px outset #666; margin-left:2px;}
+button.icon   {width:14px; height:14px; border:none; padding:0; margin:0; background:transparent url(../img/icons.png) no-repeat;}
 
 /* page structure */
 
-div#xml  {padding:14px 10px 10px 10px; margin:10px 10px 0 10px; background-color:#fff; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px;}
+div.xml  {padding:14px 10px 10px 10px; margin:10px 10px 0 10px; background-color:#fff; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px;}
 
 /* xml structure */
-div#xml ul li                     {margin-bottom:0; padding-bottom:0;}
-div#xml ul li a                   {color:#9cc; font:normal 10px tahoma,helvetica,arial;}
-div#xml ul li input,
-div#xml ul li textarea,
-div#xml ul li ul.nodeCore input   {background-color:#eefffa; color:#000;}
-div#xml ul li ul.nodeCore input.newChild {color:#900;}
+div.xml ul li                     {margin-bottom:0; padding-bottom:0;}
+div.xml ul li a                   {color:#9cc; font:normal 10px tahoma,helvetica,arial;}
+div.xml ul li input,
+div.xml ul li textarea,
+div.xml ul li ul.nodeCore input   {background-color:#eefffa; color:#000;}
+div.xml ul li ul.nodeCore input.newChild {color:#900;}
 
-div#xml ul li span.nodeName             {padding:1px; font-weight:bold; color:#900; cursor:pointer;}
-div#xml ul li.comment span.nodeName     {color:#999; font-style:italic;}
+div.xml ul li span.nodeName             {padding:1px; font-weight:bold; color:#900; cursor:pointer;}
+div.xml ul li.comment span.nodeName     {color:#999; font-style:italic;}
 
-div#xml ul li span.nodeAttrs                      {padding:1px; color:#666; font-weight:normal;}
-div#xml ul li span.nodeAttrs span.singleAttr      {margin-left:8px;}
-div#xml ul li span.nodeAttrs span.attrValue       {font:italic 11px georgia,serif; color:#000;}
-div#xml ul li span.nodeAttrs span.attrValue:hover {color:#090; cursor:pointer;}
-div#xml ul li span.nodeAttrs button.killAttr      {background-position:-34px -194px;}
-div#xml ul li span.nodeAttrs form                 {display:inline; margin:0; padding:0;}
-div#xml ul li span.nodeAttrs input                {font:italic 11px georgia,serif; border:0; padding:0; margin:0; border-bottom:1px dotted #066;}
-div#xml ul li span.nodeAttrs input.newAttrName    {width:80px; margin-left:8px;}
-div#xml ul li span.nodeAttrs input.newAttrValue   {width:120px; margin-right:8px;}
-div#xml ul li span.nodeAttrs button.addAttr       {margin-left:6px; background-position:0 -194px;}
+div.xml ul li span.nodeAttrs                      {padding:1px; color:#666; font-weight:normal;}
+div.xml ul li span.nodeAttrs span.singleAttr      {margin-left:8px;}
+div.xml ul li span.nodeAttrs span.attrValue       {font:italic 11px georgia,serif; color:#000;}
+div.xml ul li span.nodeAttrs span.attrValue:hover {color:#090; cursor:pointer;}
+div.xml ul li span.nodeAttrs button.killAttr      {background-position:-34px -194px;}
+div.xml ul li span.nodeAttrs form                 {display:inline; margin:0; padding:0;}
+div.xml ul li span.nodeAttrs input                {font:italic 11px georgia,serif; border:0; padding:0; margin:0; border-bottom:1px dotted #066;}
+div.xml ul li span.nodeAttrs input.newAttrName    {width:80px; margin-left:8px;}
+div.xml ul li span.nodeAttrs input.newAttrValue   {width:120px; margin-right:8px;}
+div.xml ul li span.nodeAttrs button.addAttr       {margin-left:6px; background-position:0 -194px;}
 
-div#xml ul li span.nodeValue        {color:#666;}
-div#xml ul li span.nodeValue strong {color:#333;}
+div.xml ul li span.nodeValue        {color:#666;}
+div.xml ul li span.nodeValue strong {color:#333;}
 
-div#xml ul li ul.nodeCore li p.nodeValue                    {font:italic 11px georgia,serif; width:400px; padding:0; margin:0; margin-left:4px; color:#000;}
-div#xml ul li ul.nodeCore li p.nodeValue:hover              {color:#090; cursor:pointer;}
-div#xml ul li ul.nodeCore li p.nodeValue span.noValue       {color:#999;}
-div#xml ul li ul.nodeCore li p.nodeValue:hover span.noValue {color:#090; cursor:pointer;}
-div#xml ul li ul.nodeCore li a.addChild                     {margin-left:4px;}
-div#xml ul li ul.nodeCore li textarea                       {font:italic 11px georgia,serif; width:400px; height:26px; padding:0 2px 2px 2px; margin:0 1px 2px 1px; border:none; border-bottom:1px dotted #066;}
-div#xml ul li ul.nodeCore li div.editTextValueButtons       {width:404px; height:15px;}
-div#xml ul li ul.nodeCore input {border:0; padding:0; margin:0 6px 0 4px; border-bottom:1px dotted #066;}
+div.xml ul li ul.nodeCore li p.nodeValue                    {font:italic 11px georgia,serif; width:400px; padding:0; margin:0; margin-left:4px; color:#000;}
+div.xml ul li ul.nodeCore li p.nodeValue:hover              {color:#090; cursor:pointer;}
+div.xml ul li ul.nodeCore li p.nodeValue span.noValue       {color:#999;}
+div.xml ul li ul.nodeCore li p.nodeValue:hover span.noValue {color:#090; cursor:pointer;}
+div.xml ul li ul.nodeCore li a.addChild                     {margin-left:4px;}
+div.xml ul li ul.nodeCore li textarea                       {font:italic 11px georgia,serif; width:400px; height:26px; padding:0 2px 2px 2px; margin:0 1px 2px 1px; border:none; border-bottom:1px dotted #066;}
+div.xml ul li ul.nodeCore li div.editTextValueButtons       {width:404px; height:15px;}
+div.xml ul li ul.nodeCore input {border:0; padding:0; margin:0 6px 0 4px; border-bottom:1px dotted #066;}
 
-div#xml ul li button.killNode,
-div#xml ul li button.killChild {background-position:-34px -194px; margin-left:2px;}
+div.xml ul li button.killNode,
+div.xml ul li button.killChild {background-position:-34px -194px; margin-left:2px;}
 
-div#xml span.comment {font:italic 11px consolas,courier new,monospace; color:#999;}
+div.xml span.comment {font:italic 11px consolas,courier new,monospace; color:#999;}
 
 /* xml tree support */
 .treeview    {padding:0; margin:0; list-style:none;}
